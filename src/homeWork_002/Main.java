@@ -12,7 +12,7 @@ public class Main {
         int max = meth2.max(arr);
         System.out.println("Среднее значение элементов массива = " + sred);
         System.out.println("Максимум в массиве = " + max);
-
+d
     }
 
 

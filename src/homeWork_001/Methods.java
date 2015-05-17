@@ -4,6 +4,7 @@ package homeWork_001;
  * Created by Иричи on 16.05.2015.
  */
 public class Methods {
+    //Переворот массива
     public int[] coup(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - i - 1; j++) {

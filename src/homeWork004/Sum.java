@@ -5,8 +5,8 @@ package homeWork004;
  */
 public class Sum {
     public static void main(String[] args) {
-        String a = "1231231231231423";
-        String b = "8888888880000059556665455";
+        String a = "999";
+        String b = "9999";
         if (a.length() < b.length()) {
             String temp = a;
             a = b;
@@ -17,7 +17,7 @@ public class Sum {
         int blength = b.length();//длина строки  b
         int ed = 0; // перенос единицы если число больше 9
         if (alength > blength) {
-            for (int i = a.length() - 1; i > 0; i--) {// цикл от длины а справа налево
+            for (int i = a.length() - 1; i >= 0; i--) {// цикл от длины а справа налево
                 int aChar = Integer.parseInt(String.valueOf(a.charAt(i)));
                 int result;
                 if ((i + blength - alength) >= 0) {//мы еще не прошли по всем симолам строки б
@@ -26,14 +26,13 @@ public class Sum {
                 } else {
                     result = aChar;
                 }
-                if (result > 9) {
+                if (result > 9 && i > 0) {
                     result = result - 10;
                     sum = (result + ed) + sum;
                     ed = 1;
                     //     System.out.println(sum);
                 } else {
                     sum = (result + ed) + sum;
-                    ed = 0;
                 }
                 System.out.println(sum);
 

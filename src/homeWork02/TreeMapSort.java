@@ -1,6 +1,7 @@
 package homeWork02;
 
 import java.util.Arrays;
+import java.util.Map;
 import java.util.TreeMap;
 
 /**
@@ -25,13 +26,19 @@ public class TreeMapSort {
             }
         }
         int count = 0;
-        int treeMapSize = treeMap.size();
-        for (int i = 0; i < treeMapSize; i++) {
-            for (int j = 0; j < treeMap.get(treeMap.firstKey()); j++) {
-                arr[count++] = treeMap.firstKey();
+
+        for (Map.Entry<Integer, Integer> entry : treeMap.entrySet()) {
+            for (int i = 0; i < entry.getValue(); i++) {
+                arr[count++] = entry.getKey();
             }
-            treeMap.remove(treeMap.firstKey());
         }
+//        int treeMapSize = treeMap.size();
+//        for (int i = 0; i < treeMapSize; i++) {
+//            for (int j = 0; j < treeMap.get(treeMap.firstKey()); j++) {
+//                arr[count++] = treeMap.firstKey();
+//            }
+//            treeMap.remove(treeMap.firstKey());
+//        }
         System.out.println(treeMap);
         return arr;
     }

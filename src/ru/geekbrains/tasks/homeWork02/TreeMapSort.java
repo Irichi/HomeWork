@@ -1,4 +1,4 @@
-package homeWork02;
+package ru.geekbrains.tasks.homeWork02;
 
 import java.util.Arrays;
 import java.util.Map;

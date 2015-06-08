@@ -1,4 +1,4 @@
-package homeWork_002;
+package ru.geekbrains.tasks.homeWork_002;
 
 /**
  * Created by Иричи on 16.05.2015.

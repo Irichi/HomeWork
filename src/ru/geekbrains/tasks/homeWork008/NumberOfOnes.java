@@ -1,4 +1,4 @@
-package homeWork008;
+package ru.geekbrains.tasks.homeWork008;
 
 import java.io.BufferedReader;
 import java.io.IOException;

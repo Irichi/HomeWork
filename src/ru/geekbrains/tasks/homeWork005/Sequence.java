@@ -1,4 +1,4 @@
-package homeWork005;
+package ru.geekbrains.tasks.homeWork005;
 
 import java.util.Arrays;
 
